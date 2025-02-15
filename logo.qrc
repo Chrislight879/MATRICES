@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="cct">
+    <file>images.jpeg</file>
+  </qresource>
+</RCC>
