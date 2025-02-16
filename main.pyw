@@ -11,6 +11,7 @@ class form(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)    
         self.ui.btnCalcularResta.clicked.connect(self.restar)
+        self.ui.btnCalcularSum.clicked.connect(self.sumar)
 
     def restar(self):
         # MATRIZ A
@@ -42,9 +43,37 @@ class form(QMainWindow):
         self.ui.txtMresResta32.setText(str(Mres[2][1]))
         self.ui.txtMresResta33.setText(str(Mres[2][2]))
 
+    def sumar(self):
+
+      
+      A= [
+         [float(self.ui.txtMaSum11.text()), float(self.ui.txtMaSum12.text()), float(self.ui.txtMaSum13.text())],
+         [float(self.ui.txtMaSum21.text()), float(self.ui.txtMaSum22.text()), float(self.ui.txtMaSum23.text())],
+         [float(self.ui.txtMaSum31.text()), float(self.ui.txtMaSum32.text()), float(self.ui.txtMaSum33.text())],
+      ]
+
+      B= [
+         [float(self.ui.txtMbSum11.text()), float(self.ui.txtMbSum12.text()), float(self.ui.txtMbSum13.text())],
+         [float(self.ui.txtMbSum21.text()), float(self.ui.txtMbSum22.text()), float(self.ui.txtMbSum23.text())],
+         [float(self.ui.txtMbSum31.text()), float(self.ui.txtMbSum32.text()), float(self.ui.txtMbSum33.text())],
+      ]
+
+      MresSum = [
+         [A[i][j]+ B[i][j] for j in range(3)] for i in range(3)
+      ]
+
+      self.ui.txtMresSum11.setText(str(MresSum[0][0]))
+      self.ui.txtMresSum12.setText(str(MresSum[0][1]))
+      self.ui.txtMresSum13.setText(str(MresSum[0][2]))
+      self.ui.txtMresSum21.setText(str(MresSum[1][0]))
+      self.ui.txtMresSum22.setText(str(MresSum[1][1]))
+      self.ui.txtMresSum23.setText(str(MresSum[1][2]))
+      self.ui.txtMresSum31.setText(str(MresSum[2][0]))
+      self.ui.txtMresSum32.setText(str(MresSum[2][1]))
+      self.ui.txtMresSum33.setText(str(MresSum[2][2]))
 
         # CREAR LA APLICACION Y MOSTRARLA
-if __name__ == "__main__":  
+if __name__ =="__main__":  
     app = QApplication(sys.argv)
     myapp = form()
     myapp.show()
