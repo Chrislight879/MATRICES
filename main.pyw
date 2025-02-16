@@ -12,6 +12,7 @@ class form(QMainWindow):
         self.ui.setupUi(self)    
         self.ui.btnCalcularResta.clicked.connect(self.restar)
         self.ui.btnCalcularSum.clicked.connect(self.sumar)
+        self.ui.btnCalcularInversa.clicked.connect(self.inversa)
 
     def restar(self):
         # MATRIZ A
@@ -71,6 +72,86 @@ class form(QMainWindow):
       self.ui.txtMresSum31.setText(str(MresSum[2][0]))
       self.ui.txtMresSum32.setText(str(MresSum[2][1]))
       self.ui.txtMresSum33.setText(str(MresSum[2][2]))
+
+    def inversa(self):
+    # MATRIZ ORIGINAL
+      A = [
+         [float(self.ui.txtMaInversa11.text()), float(self.ui.txtMaInversa12.text()), float(self.ui.txtMaInversa13.text())],
+         [float(self.ui.txtMaInversa21.text()), float(self.ui.txtMaInversa22.text()), float(self.ui.txtMaInversa23.text())],
+         [float(self.ui.txtMaInversa31.text()), float(self.ui.txtMaInversa32.text()), float(self.ui.txtMaInversa33.text())],
+      ] 
+
+      # DETERMINANTE (Regla de Sarrus)
+      det = (
+            A[0][0] * (A[1][1] * A[2][2] - A[1][2] * A[2][1])
+          - A[0][1] * (A[1][0] * A[2][2] - A[1][2] * A[2][0])
+          + A[0][2] * (A[1][0] * A[2][1] - A[1][1] * A[2][0])
+       )
+
+      # MOSTRAR DETERMINANTE
+      self.ui.txtDeterInversa.setText(str(det))
+
+      if det == 0:
+        self.ui.txtMinversaInversa11.setText("Nu hay")
+        self.ui.txtMinversaInversa12.setText("Nu hay")
+        self.ui.txtMinversaInversa13.setText("Nu hay")
+        self.ui.txtMinversaInversa21.setText("Nu hay")
+        self.ui.txtMinversaInversa22.setText("Nu hay")
+        self.ui.txtMinversaInversa23.setText("Nu hay")
+        self.ui.txtMinversaInversa31.setText("Nu hay")
+        self.ui.txtMinversaInversa32.setText("Nu hay")
+        self.ui.txtMinversaInversa33.setText("Nu hay")
+        return
+
+      # MATRIZ DE COFACTORES
+      Cof = [
+           [
+             ((A[1][1] * A[2][2] - A[1][2] * A[2][1]) * ((-1) ** (0 + 0))),
+             ((A[1][0] * A[2][2] - A[1][2] * A[2][0]) * ((-1) ** (0 + 1))),
+             ((A[1][0] * A[2][1] - A[1][1] * A[2][0]) * ((-1) ** (0 + 2))),
+           ],
+           [
+             ((A[0][1] * A[2][2] - A[0][2] * A[2][1]) * ((-1) ** (1 + 0))),
+             ((A[0][0] * A[2][2] - A[0][2] * A[2][0]) * ((-1) ** (1 + 1))),
+             ((A[0][0] * A[2][1] - A[0][1] * A[2][0]) * ((-1) ** (1 + 2))),
+           ],
+           [
+             ((A[0][1] * A[1][2] - A[0][2] * A[1][1]) * ((-1) ** (2 + 0))),
+             ((A[0][0] * A[1][2] - A[0][2] * A[1][0]) * ((-1) ** (2 + 1))),
+             ((A[0][0] * A[1][1] - A[0][1] * A[1][0]) * ((-1) ** (2 + 2))),
+           ],
+        ]
+
+      # MATRIZ ADJUNTA (Transpuesta de la matriz de cofactores)
+      Adj = [[Cof[j][i] for j in range(3)] for i in range(3)]
+
+      # MOSTRAR ADJUNTA
+      self.ui.txtMadjunInversa11.setText(str(Adj[0][0]))
+      self.ui.txtMadjunInversa12.setText(str(Adj[0][1]))
+      self.ui.txtMadjunInversa13.setText(str(Adj[0][2]))
+      self.ui.txtMadjunInversa21.setText(str(Adj[1][0]))
+      self.ui.txtMadjunInversa22.setText(str(Adj[1][1]))
+      self.ui.txtMadjunInversa23.setText(str(Adj[1][2]))
+      self.ui.txtMadjunInversa31.setText(str(Adj[2][0]))
+      self.ui.txtMadjunInversa32.setText(str(Adj[2][1]))
+      self.ui.txtMadjunInversa33.setText(str(Adj[2][2]))
+
+      # MATRIZ INVERSA (Adjunta / Determinante)
+      det = float(det)  # Asegura que det sea flotante
+      Inv = [[float(Adj[i][j]) / float(det) for j in range(3)] for i in range(3)]
+
+      # MOSTRAR INVERSA
+      self.ui.txtMinversaInversa11.setText(str(Inv[0][0]))
+      self.ui.txtMinversaInversa12.setText(str(Inv[0][1]))
+      self.ui.txtMinversaInversa13.setText(str(Inv[0][2]))
+      self.ui.txtMinversaInversa21.setText(str(Inv[1][0]))
+      self.ui.txtMinversaInversa22.setText(str(Inv[1][1]))
+      self.ui.txtMinversaInversa23.setText(str(Inv[1][2]))
+      self.ui.txtMinversaInversa31.setText(str(Inv[2][0]))
+      self.ui.txtMinversaInversa32.setText(str(Inv[2][1]))
+      self.ui.txtMinversaInversa33.setText(str(Inv[2][2]))
+
+  
 
         # CREAR LA APLICACION Y MOSTRARLA
 if __name__ =="__main__":  
