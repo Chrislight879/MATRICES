@@ -10,6 +10,9 @@ class form(QMainWindow):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)    
+
+        self.ui.tabWidget.setCurrentIndex(0)
+
         self.ui.btnCalcularResta.clicked.connect(self.restar)
         self.ui.btnCalcularSum.clicked.connect(self.sumar)
         self.ui.btnCalcularInversa.clicked.connect(self.inversa)
