@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'matricesurGKls.ui'
+## Form generated from reading UI file 'matriceseSTXie.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -269,6 +269,9 @@ class Ui_MainWindow(object):
         self.btnCalcularSum = QPushButton(self.tab)
         self.btnCalcularSum.setObjectName(u"btnCalcularSum")
         self.btnCalcularSum.setGeometry(QRect(510, 90, 171, 61))
+        self.btnLimpiarSum = QPushButton(self.tab)
+        self.btnLimpiarSum.setObjectName(u"btnLimpiarSum")
+        self.btnLimpiarSum.setGeometry(QRect(530, 190, 131, 51))
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
@@ -462,6 +465,9 @@ class Ui_MainWindow(object):
         self.btnCalcularResta = QPushButton(self.tab_2)
         self.btnCalcularResta.setObjectName(u"btnCalcularResta")
         self.btnCalcularResta.setGeometry(QRect(500, 100, 171, 61))
+        self.btnLimpiarResta = QPushButton(self.tab_2)
+        self.btnLimpiarResta.setObjectName(u"btnLimpiarResta")
+        self.btnLimpiarResta.setGeometry(QRect(520, 210, 131, 51))
         self.tabWidget.addTab(self.tab_2, "")
         self.tab_3 = QWidget()
         self.tab_3.setObjectName(u"tab_3")
@@ -655,6 +661,9 @@ class Ui_MainWindow(object):
         self.btnCalcularMulti = QPushButton(self.tab_3)
         self.btnCalcularMulti.setObjectName(u"btnCalcularMulti")
         self.btnCalcularMulti.setGeometry(QRect(450, 90, 171, 61))
+        self.btnLimpiarMulti = QPushButton(self.tab_3)
+        self.btnLimpiarMulti.setObjectName(u"btnLimpiarMulti")
+        self.btnLimpiarMulti.setGeometry(QRect(480, 160, 131, 51))
         self.tabWidget.addTab(self.tab_3, "")
         self.tab_4 = QWidget()
         self.tab_4.setObjectName(u"tab_4")
@@ -857,6 +866,9 @@ class Ui_MainWindow(object):
         self.btnCalcularInversa = QPushButton(self.tab_4)
         self.btnCalcularInversa.setObjectName(u"btnCalcularInversa")
         self.btnCalcularInversa.setGeometry(QRect(260, 70, 171, 61))
+        self.btnLimpiarInversa = QPushButton(self.tab_4)
+        self.btnLimpiarInversa.setObjectName(u"btnLimpiarInversa")
+        self.btnLimpiarInversa.setGeometry(QRect(520, 70, 131, 51))
         self.tabWidget.addTab(self.tab_4, "")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
@@ -982,7 +994,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(4)
+        self.tabWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1010,6 +1022,7 @@ class Ui_MainWindow(object):
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"MATRIZ B", None))
         self.label_21.setText(QCoreApplication.translate("MainWindow", u"MATRIZ A", None))
         self.btnCalcularSum.setText(QCoreApplication.translate("MainWindow", u"CALCULAR", None))
+        self.btnLimpiarSum.setText(QCoreApplication.translate("MainWindow", u"LIMPIAR", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"SUMA", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"RESTAR", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"MATRIZ B", None))
@@ -1017,6 +1030,7 @@ class Ui_MainWindow(object):
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"RESPUESTA", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"SOLO INGRESAR NUMEROS", None))
         self.btnCalcularResta.setText(QCoreApplication.translate("MainWindow", u"CALCULAR", None))
+        self.btnLimpiarResta.setText(QCoreApplication.translate("MainWindow", u"LIMPIAR", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"RESTA", None))
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"MULTIPLICAR", None))
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"MATRIZ B", None))
@@ -1024,6 +1038,7 @@ class Ui_MainWindow(object):
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"SOLO INGRESAR NUMEROS", None))
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"RESPUESTA", None))
         self.btnCalcularMulti.setText(QCoreApplication.translate("MainWindow", u"CALCULAR", None))
+        self.btnLimpiarMulti.setText(QCoreApplication.translate("MainWindow", u"LIMPIAR", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"MULTIPLICACION", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"SOLO INGRESAR NUMEROS", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"ADJUNTA", None))
@@ -1031,6 +1046,7 @@ class Ui_MainWindow(object):
         self.label_26.setText(QCoreApplication.translate("MainWindow", u"DETERMINANTE", None))
         self.label_28.setText(QCoreApplication.translate("MainWindow", u"INVERSA", None))
         self.btnCalcularInversa.setText(QCoreApplication.translate("MainWindow", u"CALCULAR", None))
+        self.btnLimpiarInversa.setText(QCoreApplication.translate("MainWindow", u"LIMPIAR", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), QCoreApplication.translate("MainWindow", u"INVERSA", None))
     # retranslateUi
 
