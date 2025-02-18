@@ -18,9 +18,9 @@ class form(QMainWindow):
         self.ui.btnCalcularSum.clicked.connect(self.sumar)
         self.ui.btnLimpiarSum.clicked.connect(self.cleansuma)
         self.ui.btnCalcularInversa.clicked.connect(self.inversa)
-<<<<<<< HEAD
         self.ui.btnLimpiarInversa.clicked.connect(self.cleaninversa)
         self.ui.btnLimpiarMulti.clicked.connect(self.cleanmultiplicar)
+        self.ui.btnCalcularMulti.clicked.connect(self.multiplicar)
 
     def cleanmultiplicar(self):
                #MATRIZ A
@@ -86,10 +86,6 @@ class form(QMainWindow):
         self.ui.txtMresResta32.clear()
         self.ui.txtMresResta33.clear()
        
-=======
-        self.ui.btnCalcularMulti.clicked.connect(self.multiplicar)
->>>>>>> ae1dccb38cd8b839e7550cedd5648af6df9127fb
-
     def restar(self):
         # MATRIZ A
         A = [
@@ -181,7 +177,6 @@ class form(QMainWindow):
       self.ui.txtMresSum32.setText(str(MresSum[2][1]))
       self.ui.txtMresSum33.setText(str(MresSum[2][2]))
 
-<<<<<<< HEAD
     def cleaninversa(self):
         #MATRIZ A
         self.ui.txtMaInversa11.clear()
@@ -215,7 +210,7 @@ class form(QMainWindow):
         self.ui.txtMinversaInversa33.clear()
         #VALOR DEL DETERMINANTE
         self.ui.txtDeterInversa.clear()
-=======
+
     def multiplicar(self):
     # MATRIZ A
       A = [
@@ -249,7 +244,6 @@ class form(QMainWindow):
       self.ui.txtMresMulti32.setText(str(Mres[2][1]))
       self.ui.txtMresMulti33.setText(str(Mres[2][2]))
   
->>>>>>> ae1dccb38cd8b839e7550cedd5648af6df9127fb
 
     def inversa(self):
     # MATRIZ ORIGINAL
