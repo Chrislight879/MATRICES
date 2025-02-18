@@ -95,15 +95,31 @@ class form(QMainWindow):
       self.ui.txtDeterInversa.setText(str(det))
 
       if det == 0:
-        self.ui.txtMinversaInversa11.setText("Nu hay")
-        self.ui.txtMinversaInversa12.setText("Nu hay")
-        self.ui.txtMinversaInversa13.setText("Nu hay")
-        self.ui.txtMinversaInversa21.setText("Nu hay")
-        self.ui.txtMinversaInversa22.setText("Nu hay")
-        self.ui.txtMinversaInversa23.setText("Nu hay")
-        self.ui.txtMinversaInversa31.setText("Nu hay")
-        self.ui.txtMinversaInversa32.setText("Nu hay")
-        self.ui.txtMinversaInversa33.setText("Nu hay")
+
+        QMessageBox.warning(self, "Error", "No hay inversa, el determinante es 0.")
+
+        # Limpiar los campos de entrada
+        self.ui.txtMaInversa11.clear()
+        self.ui.txtMaInversa12.clear()
+        self.ui.txtMaInversa13.clear()
+        self.ui.txtMaInversa21.clear()
+        self.ui.txtMaInversa22.clear()
+        self.ui.txtMaInversa23.clear()
+        self.ui.txtMaInversa31.clear()
+        self.ui.txtMaInversa32.clear()
+        self.ui.txtMaInversa33.clear()
+
+        # Limpiar los campos de la inversa
+        self.ui.txtMinversaInversa11.clear()
+        self.ui.txtMinversaInversa12.clear()
+        self.ui.txtMinversaInversa13.clear()
+        self.ui.txtMinversaInversa21.clear()
+        self.ui.txtMinversaInversa22.clear()
+        self.ui.txtMinversaInversa23.clear()
+        self.ui.txtMinversaInversa31.clear()
+        self.ui.txtMinversaInversa32.clear()
+        self.ui.txtMinversaInversa33.clear()
+
         return
 
       # MATRIZ DE COFACTORES
