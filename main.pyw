@@ -88,33 +88,40 @@ class form(QMainWindow):
        
     def restar(self):
         # MATRIZ A
-        A = [
+        
+       try:
+         # MATRIZ A
+         A = [
             [float(self.ui.txtMaResta11.text()), float(self.ui.txtMaResta12.text()), float(self.ui.txtMaResta13.text())],
             [float(self.ui.txtMaResta21.text()), float(self.ui.txtMaResta22.text()), float(self.ui.txtMaResta23.text())],
             [float(self.ui.txtMaResta31.text()), float(self.ui.txtMaResta32.text()), float(self.ui.txtMaResta33.text())],
-        ]
-        
-        B = [
+          ]
+
+         # MATRIZ B
+         B = [
             [float(self.ui.txtMbResta11.text()), float(self.ui.txtMbResta12.text()), float(self.ui.txtMbResta13.text())],
             [float(self.ui.txtMbResta21.text()), float(self.ui.txtMbResta22.text()), float(self.ui.txtMbResta23.text())],
             [float(self.ui.txtMbResta31.text()), float(self.ui.txtMbResta32.text()), float(self.ui.txtMbResta33.text())],
-        ]
-        
-        # MATRIZ B
-        Mres = [
-            [A[i][j] - B[i][j] for j in range(3)] for i in range(3)
-        ]
-        
-        # IMPRIMIR MATRIZ RESPUESTA
-        self.ui.txtMresResta11.setText(str(Mres[0][0]))
-        self.ui.txtMresResta12.setText(str(Mres[0][1]))
-        self.ui.txtMresResta13.setText(str(Mres[0][2]))
-        self.ui.txtMresResta21.setText(str(Mres[1][0]))
-        self.ui.txtMresResta22.setText(str(Mres[1][1]))
-        self.ui.txtMresResta23.setText(str(Mres[1][2]))
-        self.ui.txtMresResta31.setText(str(Mres[2][0]))
-        self.ui.txtMresResta32.setText(str(Mres[2][1]))
-        self.ui.txtMresResta33.setText(str(Mres[2][2]))
+          ]
+
+          # MATRIZ RESULTADO
+         Mres = [[A[i][j] - B[i][j] for j in range(3)] for i in range(3)]
+
+          # IMPRIMIR RESULTADOS
+         self.ui.txtMresResta11.setText(str(Mres[0][0]))
+         self.ui.txtMresResta12.setText(str(Mres[0][1]))
+         self.ui.txtMresResta13.setText(str(Mres[0][2]))
+         self.ui.txtMresResta21.setText(str(Mres[1][0]))
+         self.ui.txtMresResta22.setText(str(Mres[1][1]))
+         self.ui.txtMresResta23.setText(str(Mres[1][2]))
+         self.ui.txtMresResta31.setText(str(Mres[2][0]))
+         self.ui.txtMresResta32.setText(str(Mres[2][1]))
+         self.ui.txtMresResta33.setText(str(Mres[2][2]))
+       except ValueError:
+         QMessageBox.warning(self, "Error", "Por favor, ingrese solo números válidos en todos los campos.")
+ 
+    
+       
       
     def cleansuma(self):
         #MATRIZ A
@@ -150,32 +157,35 @@ class form(QMainWindow):
 
     def sumar(self):
 
-      
-      A= [
+      try:
+       A= [
          [float(self.ui.txtMaSum11.text()), float(self.ui.txtMaSum12.text()), float(self.ui.txtMaSum13.text())],
          [float(self.ui.txtMaSum21.text()), float(self.ui.txtMaSum22.text()), float(self.ui.txtMaSum23.text())],
          [float(self.ui.txtMaSum31.text()), float(self.ui.txtMaSum32.text()), float(self.ui.txtMaSum33.text())],
-      ]
+        ]
 
-      B= [
+       B= [
          [float(self.ui.txtMbSum11.text()), float(self.ui.txtMbSum12.text()), float(self.ui.txtMbSum13.text())],
          [float(self.ui.txtMbSum21.text()), float(self.ui.txtMbSum22.text()), float(self.ui.txtMbSum23.text())],
          [float(self.ui.txtMbSum31.text()), float(self.ui.txtMbSum32.text()), float(self.ui.txtMbSum33.text())],
-      ]
+        ]
 
-      MresSum = [
+       MresSum = [
          [A[i][j]+ B[i][j] for j in range(3)] for i in range(3)
-      ]
+        ]
 
-      self.ui.txtMresSum11.setText(str(MresSum[0][0]))
-      self.ui.txtMresSum12.setText(str(MresSum[0][1]))
-      self.ui.txtMresSum13.setText(str(MresSum[0][2]))
-      self.ui.txtMresSum21.setText(str(MresSum[1][0]))
-      self.ui.txtMresSum22.setText(str(MresSum[1][1]))
-      self.ui.txtMresSum23.setText(str(MresSum[1][2]))
-      self.ui.txtMresSum31.setText(str(MresSum[2][0]))
-      self.ui.txtMresSum32.setText(str(MresSum[2][1]))
-      self.ui.txtMresSum33.setText(str(MresSum[2][2]))
+       self.ui.txtMresSum11.setText(str(MresSum[0][0]))
+       self.ui.txtMresSum12.setText(str(MresSum[0][1]))
+       self.ui.txtMresSum13.setText(str(MresSum[0][2]))
+       self.ui.txtMresSum21.setText(str(MresSum[1][0]))
+       self.ui.txtMresSum22.setText(str(MresSum[1][1]))
+       self.ui.txtMresSum23.setText(str(MresSum[1][2]))
+       self.ui.txtMresSum31.setText(str(MresSum[2][0]))
+       self.ui.txtMresSum32.setText(str(MresSum[2][1]))
+       self.ui.txtMresSum33.setText(str(MresSum[2][2]))
+      except ValueError:
+         QMessageBox.warning(self, "Error", "Por favor, ingrese solo números válidos en todos los campos.")
+  
 
     def cleaninversa(self):
         #MATRIZ A
@@ -213,86 +223,91 @@ class form(QMainWindow):
 
     def multiplicar(self):
     # MATRIZ A
-      A = [
-        [float(self.ui.txtMaMulti11.text()), float(self.ui.txtMaMulti12.text()), float(self.ui.txtMaMulti13.text())],
-        [float(self.ui.txtMaMulti21.text()), float(self.ui.txtMaMulti22.text()), float(self.ui.txtMaMulti23.text())],
-        [float(self.ui.txtMaMulti31.text()), float(self.ui.txtMaMulti32.text()), float(self.ui.txtMaMulti33.text())],
-      ]
+     try:
+        A = [
+         [float(self.ui.txtMaMulti11.text()), float(self.ui.txtMaMulti12.text()), float(self.ui.txtMaMulti13.text())],
+         [float(self.ui.txtMaMulti21.text()), float(self.ui.txtMaMulti22.text()), float(self.ui.txtMaMulti23.text())],
+         [float(self.ui.txtMaMulti31.text()), float(self.ui.txtMaMulti32.text()), float(self.ui.txtMaMulti33.text())],
+        ]
 
-      # MATRIZ B
-      B = [
-        [float(self.ui.txtMbMulti11.text()), float(self.ui.txtMbMulti12.text()), float(self.ui.txtMbMulti13.text())],
-        [float(self.ui.txtMbMulti21.text()), float(self.ui.txtMbMulti22.text()), float(self.ui.txtMbMulti23.text())],
-        [float(self.ui.txtMbMulti31.text()), float(self.ui.txtMbMulti32.text()), float(self.ui.txtMbMulti33.text())],
-      ]
+       # MATRIZ B
+        B = [
+         [float(self.ui.txtMbMulti11.text()), float(self.ui.txtMbMulti12.text()), float(self.ui.txtMbMulti13.text())],
+         [float(self.ui.txtMbMulti21.text()), float(self.ui.txtMbMulti22.text()), float(self.ui.txtMbMulti23.text())],
+         [float(self.ui.txtMbMulti31.text()), float(self.ui.txtMbMulti32.text()), float(self.ui.txtMbMulti33.text())],
+        ]
 
-      # MATRIZ RESULTADO (C = A * B)
-      Mres = [[0 for _ in range(3)] for _ in range(3)]
+       # MATRIZ RESULTADO (C = A * B)
+        Mres = [[0 for _ in range(3)] for _ in range(3)]
 
-      for i in range(3):
-        for j in range(3):
+        for i in range(3):
+         for j in range(3):
             Mres[i][j] = sum(A[i][k] * B[k][j] for k in range(3))
 
-      # MOSTRAR RESULTADOS EN LA INTERFAZ
-      self.ui.txtMresMulti11.setText(str(Mres[0][0]))
-      self.ui.txtMresMulti12.setText(str(Mres[0][1]))
-      self.ui.txtMresMulti13.setText(str(Mres[0][2]))
-      self.ui.txtMresMulti21.setText(str(Mres[1][0]))
-      self.ui.txtMresMulti22.setText(str(Mres[1][1]))
-      self.ui.txtMresMulti23.setText(str(Mres[1][2]))
-      self.ui.txtMresMulti31.setText(str(Mres[2][0]))
-      self.ui.txtMresMulti32.setText(str(Mres[2][1]))
-      self.ui.txtMresMulti33.setText(str(Mres[2][2]))
+        # MOSTRAR RESULTADOS EN LA INTERFAZ
+        self.ui.txtMresMulti11.setText(str(Mres[0][0]))
+        self.ui.txtMresMulti12.setText(str(Mres[0][1]))
+        self.ui.txtMresMulti13.setText(str(Mres[0][2]))
+        self.ui.txtMresMulti21.setText(str(Mres[1][0]))
+        self.ui.txtMresMulti22.setText(str(Mres[1][1]))
+        self.ui.txtMresMulti23.setText(str(Mres[1][2]))
+        self.ui.txtMresMulti31.setText(str(Mres[2][0]))
+        self.ui.txtMresMulti32.setText(str(Mres[2][1]))
+        self.ui.txtMresMulti33.setText(str(Mres[2][2]))
+     except ValueError:
+         QMessageBox.warning(self, "Error", "Por favor, ingrese solo números válidos en todos los campos.")
+ 
   
 
     def inversa(self):
     # MATRIZ ORIGINAL
-      A = [
+     try:
+       A = [
          [float(self.ui.txtMaInversa11.text()), float(self.ui.txtMaInversa12.text()), float(self.ui.txtMaInversa13.text())],
          [float(self.ui.txtMaInversa21.text()), float(self.ui.txtMaInversa22.text()), float(self.ui.txtMaInversa23.text())],
          [float(self.ui.txtMaInversa31.text()), float(self.ui.txtMaInversa32.text()), float(self.ui.txtMaInversa33.text())],
-      ] 
+        ] 
 
-      # DETERMINANTE (Regla de Sarrus)
-      det = (
+       # DETERMINANTE (Regla de Sarrus)
+       det = (
             A[0][0] * (A[1][1] * A[2][2] - A[1][2] * A[2][1])
           - A[0][1] * (A[1][0] * A[2][2] - A[1][2] * A[2][0])
           + A[0][2] * (A[1][0] * A[2][1] - A[1][1] * A[2][0])
-       )
+        )
 
-      # MOSTRAR DETERMINANTE
-      self.ui.txtDeterInversa.setText(str(det))
+       # MOSTRAR DETERMINANTE
+       self.ui.txtDeterInversa.setText(str(det))
 
-      if det == 0:
+       if det == 0:
 
-        QMessageBox.warning(self, "Error", "No hay inversa, el determinante es 0.")
+         QMessageBox.warning(self, "Error", "No hay inversa, el determinante es 0.")
 
-        # Limpiar los campos de entrada
-        self.ui.txtMaInversa11.clear()
-        self.ui.txtMaInversa12.clear()
-        self.ui.txtMaInversa13.clear()
-        self.ui.txtMaInversa21.clear()
-        self.ui.txtMaInversa22.clear()
-        self.ui.txtMaInversa23.clear()
-        self.ui.txtMaInversa31.clear()
-        self.ui.txtMaInversa32.clear()
-        self.ui.txtMaInversa33.clear()
+         # Limpiar los campos de entrada
+         self.ui.txtMaInversa11.clear()
+         self.ui.txtMaInversa12.clear()
+         self.ui.txtMaInversa13.clear()
+         self.ui.txtMaInversa21.clear()
+         self.ui.txtMaInversa22.clear()
+         self.ui.txtMaInversa23.clear()
+         self.ui.txtMaInversa31.clear()
+         self.ui.txtMaInversa32.clear()
+         self.ui.txtMaInversa33.clear()
 
-        # Limpiar los campos de la inversa
-        self.ui.txtMinversaInversa11.clear()
-        self.ui.txtMinversaInversa12.clear()
-        self.ui.txtMinversaInversa13.clear()
-        self.ui.txtMinversaInversa21.clear()
-        self.ui.txtMinversaInversa22.clear()
-        self.ui.txtMinversaInversa23.clear()
-        self.ui.txtMinversaInversa31.clear()
-        self.ui.txtMinversaInversa32.clear()
-        self.ui.txtMinversaInversa33.clear()
+         # Limpiar los campos de la inversa
+         self.ui.txtMinversaInversa11.clear()
+         self.ui.txtMinversaInversa12.clear()
+         self.ui.txtMinversaInversa13.clear()
+         self.ui.txtMinversaInversa21.clear()
+         self.ui.txtMinversaInversa22.clear()
+         self.ui.txtMinversaInversa23.clear()
+         self.ui.txtMinversaInversa31.clear()
+         self.ui.txtMinversaInversa32.clear()
+         self.ui.txtMinversaInversa33.clear()
 
-        return
+         return
 
-      # MATRIZ DE COFACTORES
-      Cof = [
+         # MATRIZ DE COFACTORES
+       Cof = [
            [
              ((A[1][1] * A[2][2] - A[1][2] * A[2][1]) * ((-1) ** (0 + 0))),
              ((A[1][0] * A[2][2] - A[1][2] * A[2][0]) * ((-1) ** (0 + 1))),
@@ -310,35 +325,36 @@ class form(QMainWindow):
            ],
         ]
 
-      # MATRIZ ADJUNTA (Transpuesta de la matriz de cofactores)
-      Adj = [[Cof[j][i] for j in range(3)] for i in range(3)]
+         # MATRIZ ADJUNTA (Transpuesta de la matriz de cofactores)
+       Adj = [[Cof[j][i] for j in range(3)] for i in range(3)]
 
-      # MOSTRAR ADJUNTA
-      self.ui.txtMadjunInversa11.setText(str(Adj[0][0]))
-      self.ui.txtMadjunInversa12.setText(str(Adj[0][1]))
-      self.ui.txtMadjunInversa13.setText(str(Adj[0][2]))
-      self.ui.txtMadjunInversa21.setText(str(Adj[1][0]))
-      self.ui.txtMadjunInversa22.setText(str(Adj[1][1]))
-      self.ui.txtMadjunInversa23.setText(str(Adj[1][2]))
-      self.ui.txtMadjunInversa31.setText(str(Adj[2][0]))
-      self.ui.txtMadjunInversa32.setText(str(Adj[2][1]))
-      self.ui.txtMadjunInversa33.setText(str(Adj[2][2]))
+         # MOSTRAR ADJUNTA
+       self.ui.txtMadjunInversa11.setText(str(Adj[0][0]))
+       self.ui.txtMadjunInversa12.setText(str(Adj[0][1]))
+       self.ui.txtMadjunInversa13.setText(str(Adj[0][2]))
+       self.ui.txtMadjunInversa21.setText(str(Adj[1][0]))
+       self.ui.txtMadjunInversa22.setText(str(Adj[1][1]))
+       self.ui.txtMadjunInversa23.setText(str(Adj[1][2]))
+       self.ui.txtMadjunInversa31.setText(str(Adj[2][0]))
+       self.ui.txtMadjunInversa32.setText(str(Adj[2][1]))
+       self.ui.txtMadjunInversa33.setText(str(Adj[2][2]))
 
-      # MATRIZ INVERSA (Adjunta / Determinante)
-      det = float(det)  # Asegura que det sea flotante
-      Inv = [[float(Adj[i][j]) / float(det) for j in range(3)] for i in range(3)]
+         # MATRIZ INVERSA (Adjunta / Determinante)
+       det = float(det)  # Asegura que det sea flotante
+       Inv = [[float(Adj[i][j]) / float(det) for j in range(3)] for i in range(3)]
 
-      # MOSTRAR INVERSA
-      self.ui.txtMinversaInversa11.setText(str(Inv[0][0]))
-      self.ui.txtMinversaInversa12.setText(str(Inv[0][1]))
-      self.ui.txtMinversaInversa13.setText(str(Inv[0][2]))
-      self.ui.txtMinversaInversa21.setText(str(Inv[1][0]))
-      self.ui.txtMinversaInversa22.setText(str(Inv[1][1]))
-      self.ui.txtMinversaInversa23.setText(str(Inv[1][2]))
-      self.ui.txtMinversaInversa31.setText(str(Inv[2][0]))
-      self.ui.txtMinversaInversa32.setText(str(Inv[2][1]))
-      self.ui.txtMinversaInversa33.setText(str(Inv[2][2]))
-
+         # MOSTRAR INVERSA
+       self.ui.txtMinversaInversa11.setText(str(Inv[0][0]))
+       self.ui.txtMinversaInversa12.setText(str(Inv[0][1]))
+       self.ui.txtMinversaInversa13.setText(str(Inv[0][2]))
+       self.ui.txtMinversaInversa21.setText(str(Inv[1][0]))
+       self.ui.txtMinversaInversa22.setText(str(Inv[1][1]))
+       self.ui.txtMinversaInversa23.setText(str(Inv[1][2]))
+       self.ui.txtMinversaInversa31.setText(str(Inv[2][0]))
+       self.ui.txtMinversaInversa32.setText(str(Inv[2][1]))
+       self.ui.txtMinversaInversa33.setText(str(Inv[2][2]))
+     except ValueError:
+         QMessageBox.warning(self, "Error", "Por favor, ingrese solo números válidos en todos los campos.")
   
 
         # CREAR LA APLICACION Y MOSTRARLA
