@@ -18,6 +18,7 @@ class form(QMainWindow):
         self.ui.btnCalcularSum.clicked.connect(self.sumar)
         self.ui.btnLimpiarSum.clicked.connect(self.cleansuma)
         self.ui.btnCalcularInversa.clicked.connect(self.inversa)
+<<<<<<< HEAD
         self.ui.btnLimpiarInversa.clicked.connect(self.cleaninversa)
         self.ui.btnLimpiarMulti.clicked.connect(self.cleanmultiplicar)
 
@@ -85,6 +86,9 @@ class form(QMainWindow):
         self.ui.txtMresResta32.clear()
         self.ui.txtMresResta33.clear()
        
+=======
+        self.ui.btnCalcularMulti.clicked.connect(self.multiplicar)
+>>>>>>> ae1dccb38cd8b839e7550cedd5648af6df9127fb
 
     def restar(self):
         # MATRIZ A
@@ -177,6 +181,7 @@ class form(QMainWindow):
       self.ui.txtMresSum32.setText(str(MresSum[2][1]))
       self.ui.txtMresSum33.setText(str(MresSum[2][2]))
 
+<<<<<<< HEAD
     def cleaninversa(self):
         #MATRIZ A
         self.ui.txtMaInversa11.clear()
@@ -210,6 +215,41 @@ class form(QMainWindow):
         self.ui.txtMinversaInversa33.clear()
         #VALOR DEL DETERMINANTE
         self.ui.txtDeterInversa.clear()
+=======
+    def multiplicar(self):
+    # MATRIZ A
+      A = [
+        [float(self.ui.txtMaMulti11.text()), float(self.ui.txtMaMulti12.text()), float(self.ui.txtMaMulti13.text())],
+        [float(self.ui.txtMaMulti21.text()), float(self.ui.txtMaMulti22.text()), float(self.ui.txtMaMulti23.text())],
+        [float(self.ui.txtMaMulti31.text()), float(self.ui.txtMaMulti32.text()), float(self.ui.txtMaMulti33.text())],
+      ]
+
+      # MATRIZ B
+      B = [
+        [float(self.ui.txtMbMulti11.text()), float(self.ui.txtMbMulti12.text()), float(self.ui.txtMbMulti13.text())],
+        [float(self.ui.txtMbMulti21.text()), float(self.ui.txtMbMulti22.text()), float(self.ui.txtMbMulti23.text())],
+        [float(self.ui.txtMbMulti31.text()), float(self.ui.txtMbMulti32.text()), float(self.ui.txtMbMulti33.text())],
+      ]
+
+      # MATRIZ RESULTADO (C = A * B)
+      Mres = [[0 for _ in range(3)] for _ in range(3)]
+
+      for i in range(3):
+        for j in range(3):
+            Mres[i][j] = sum(A[i][k] * B[k][j] for k in range(3))
+
+      # MOSTRAR RESULTADOS EN LA INTERFAZ
+      self.ui.txtMresMulti11.setText(str(Mres[0][0]))
+      self.ui.txtMresMulti12.setText(str(Mres[0][1]))
+      self.ui.txtMresMulti13.setText(str(Mres[0][2]))
+      self.ui.txtMresMulti21.setText(str(Mres[1][0]))
+      self.ui.txtMresMulti22.setText(str(Mres[1][1]))
+      self.ui.txtMresMulti23.setText(str(Mres[1][2]))
+      self.ui.txtMresMulti31.setText(str(Mres[2][0]))
+      self.ui.txtMresMulti32.setText(str(Mres[2][1]))
+      self.ui.txtMresMulti33.setText(str(Mres[2][2]))
+  
+>>>>>>> ae1dccb38cd8b839e7550cedd5648af6df9127fb
 
     def inversa(self):
     # MATRIZ ORIGINAL
