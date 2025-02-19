@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'matriceseSTXie.ui'
+## Form generated from reading UI file 'matriceszltlon.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -34,6 +34,7 @@ class Ui_MainWindow(object):
         font.setFamilies([u"Montserrat"])
         font.setPointSize(14)
         self.tabWidget.setFont(font)
+        self.tabWidget.setStyleSheet(u"")
         self.tab_5 = QWidget()
         self.tab_5.setObjectName(u"tab_5")
         self.label = QLabel(self.tab_5)
@@ -81,7 +82,7 @@ class Ui_MainWindow(object):
         self.tab.setObjectName(u"tab")
         self.gridLayoutWidget_3 = QWidget(self.tab)
         self.gridLayoutWidget_3.setObjectName(u"gridLayoutWidget_3")
-        self.gridLayoutWidget_3.setGeometry(QRect(20, 300, 194, 141))
+        self.gridLayoutWidget_3.setGeometry(QRect(20, 300, 194, 147))
         self.gridLayout_3 = QGridLayout(self.gridLayoutWidget_3)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -89,51 +90,98 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName(u"label_4")
         self.label_4.setFont(font)
         self.label_4.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_4.setStyleSheet(u"color: #4CAF50;  \n"
+"")
 
         self.gridLayout_3.addWidget(self.label_4, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
         self.txtMresSum31 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum31.setObjectName(u"txtMresSum31")
+        self.txtMresSum31.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresSum31.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum31, 3, 0, 1, 1)
 
         self.txtMresSum33 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum33.setObjectName(u"txtMresSum33")
+        self.txtMresSum33.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresSum33.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum33, 3, 2, 1, 1)
 
         self.txtMresSum32 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum32.setObjectName(u"txtMresSum32")
+        self.txtMresSum32.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresSum32.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum32, 3, 1, 1, 1)
 
         self.txtMresSum23 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum23.setObjectName(u"txtMresSum23")
+        self.txtMresSum23.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresSum23.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum23, 2, 2, 1, 1)
 
         self.txtMresSum22 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum22.setObjectName(u"txtMresSum22")
+        self.txtMresSum22.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresSum22.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum22, 2, 1, 1, 1)
 
         self.txtMresSum21 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum21.setObjectName(u"txtMresSum21")
+        self.txtMresSum21.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresSum21.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum21, 2, 0, 1, 1)
 
         self.txtMresSum13 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum13.setObjectName(u"txtMresSum13")
+        self.txtMresSum13.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresSum13.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum13, 1, 2, 1, 1)
 
         self.txtMresSum12 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum12.setObjectName(u"txtMresSum12")
+        self.txtMresSum12.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresSum12.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum12, 1, 1, 1, 1)
 
         self.txtMresSum11 = QLineEdit(self.gridLayoutWidget_3)
         self.txtMresSum11.setObjectName(u"txtMresSum11")
+        self.txtMresSum11.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresSum11.setReadOnly(True)
 
         self.gridLayout_3.addWidget(self.txtMresSum11, 1, 0, 1, 1)
 
@@ -158,51 +206,88 @@ class Ui_MainWindow(object):
         self.label_20 = QLabel(self.gridLayoutWidget_8)
         self.label_20.setObjectName(u"label_20")
         self.label_20.setFont(font)
+        self.label_20.setStyleSheet(u"color: #9C27B0; ")
 
         self.gridLayout_20.addWidget(self.label_20, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.txtMbSum33 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum33.setObjectName(u"txtMbSum33")
+        self.txtMbSum33.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_20.addWidget(self.txtMbSum33, 3, 2, 1, 1)
 
         self.txtMbSum31 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum31.setObjectName(u"txtMbSum31")
+        self.txtMbSum31.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px; color: black; ")
 
         self.gridLayout_20.addWidget(self.txtMbSum31, 3, 0, 1, 1)
 
         self.txtMbSum21 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum21.setObjectName(u"txtMbSum21")
+        self.txtMbSum21.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_20.addWidget(self.txtMbSum21, 2, 0, 1, 1)
 
         self.txtMbSum32 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum32.setObjectName(u"txtMbSum32")
+        self.txtMbSum32.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_20.addWidget(self.txtMbSum32, 3, 1, 1, 1)
 
         self.txtMbSum22 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum22.setObjectName(u"txtMbSum22")
+        self.txtMbSum22.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_20.addWidget(self.txtMbSum22, 2, 1, 1, 1)
 
         self.txtMbSum23 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum23.setObjectName(u"txtMbSum23")
+        self.txtMbSum23.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_20.addWidget(self.txtMbSum23, 2, 2, 1, 1)
 
         self.txtMbSum13 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum13.setObjectName(u"txtMbSum13")
+        self.txtMbSum13.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px; color: black; ")
 
         self.gridLayout_20.addWidget(self.txtMbSum13, 1, 2, 1, 1)
 
         self.txtMbSum12 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum12.setObjectName(u"txtMbSum12")
+        self.txtMbSum12.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_20.addWidget(self.txtMbSum12, 1, 1, 1, 1)
 
         self.txtMbSum11 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMbSum11.setObjectName(u"txtMbSum11")
+        self.txtMbSum11.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px; color: black; ")
 
         self.gridLayout_20.addWidget(self.txtMbSum11, 1, 0, 1, 1)
 
@@ -213,31 +298,61 @@ class Ui_MainWindow(object):
         self.gridLayout_21.setObjectName(u"gridLayout_21")
         self.txtMaSum33 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum33.setObjectName(u"txtMaSum33")
+        self.txtMaSum33.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum33, 3, 2, 1, 1)
 
         self.txtMaSum23 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum23.setObjectName(u"txtMaSum23")
+        self.txtMaSum23.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum23, 2, 2, 1, 1)
 
         self.txtMaSum11 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum11.setObjectName(u"txtMaSum11")
+        self.txtMaSum11.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum11, 1, 0, 1, 1)
 
         self.txtMaSum12 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum12.setObjectName(u"txtMaSum12")
+        self.txtMaSum12.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum12, 1, 1, 1, 1)
 
         self.txtMaSum13 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum13.setObjectName(u"txtMaSum13")
+        self.txtMaSum13.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum13, 1, 2, 1, 1)
 
         self.txtMaSum32 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum32.setObjectName(u"txtMaSum32")
+        self.txtMaSum32.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum32, 3, 1, 1, 1)
 
@@ -245,21 +360,37 @@ class Ui_MainWindow(object):
         self.label_21.setObjectName(u"label_21")
         self.label_21.setFont(font)
         self.label_21.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_21.setStyleSheet(u"color: lightblue;")
 
         self.gridLayout_21.addWidget(self.label_21, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
         self.txtMaSum22 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum22.setObjectName(u"txtMaSum22")
+        self.txtMaSum22.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum22, 2, 1, 1, 1)
 
         self.txtMaSum31 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum31.setObjectName(u"txtMaSum31")
+        self.txtMaSum31.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum31, 3, 0, 1, 1)
 
         self.txtMaSum21 = QLineEdit(self.gridLayoutWidget_8)
         self.txtMaSum21.setObjectName(u"txtMaSum21")
+        self.txtMaSum21.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_21.addWidget(self.txtMaSum21, 2, 0, 1, 1)
 
@@ -269,15 +400,57 @@ class Ui_MainWindow(object):
         self.btnCalcularSum = QPushButton(self.tab)
         self.btnCalcularSum.setObjectName(u"btnCalcularSum")
         self.btnCalcularSum.setGeometry(QRect(510, 90, 171, 61))
+        self.btnCalcularSum.setStyleSheet(u"QPushButton {\n"
+"    background-color: lightgreen;  \n"
+"    color: white;               \n"
+"    border: 2px solid lightgreen;  \n"
+"    border-radius: 10px;        \n"
+"    font-size: 18px;           \n"
+"    font-weight: bold;       \n"
+"    padding: 10px 20px;      \n"
+"    transition: all 0.3s;       \n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #32CD32; \n"
+"    border-color: #228B22;     \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFD700;  \n"
+"    border-color: #FF8C00;   \n"
+"}\n"
+"")
         self.btnLimpiarSum = QPushButton(self.tab)
         self.btnLimpiarSum.setObjectName(u"btnLimpiarSum")
         self.btnLimpiarSum.setGeometry(QRect(530, 190, 131, 51))
+        self.btnLimpiarSum.setStyleSheet(u"QPushButton {\n"
+"    background-color: #FF6347;  \n"
+"    color: white;               \n"
+"    border: 2px solid #FF4500;  \n"
+"    border-radius: 10px;       \n"
+"    font-size: 18px;            \n"
+"    font-weight: bold;          \n"
+"    padding: 10px 20px;         \n"
+"    transition: all 0.3s;       \n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #32CD32;  \n"
+"    border-color: #228B22;     \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFD700; \n"
+"    border-color: #FF8C00;    \n"
+"}\n"
+"")
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
         self.gridLayoutWidget_6 = QWidget(self.tab_2)
         self.gridLayoutWidget_6.setObjectName(u"gridLayoutWidget_6")
-        self.gridLayoutWidget_6.setGeometry(QRect(10, 55, 478, 141))
+        self.gridLayoutWidget_6.setGeometry(QRect(10, 55, 478, 149))
         self.gridLayout_13 = QGridLayout(self.gridLayoutWidget_6)
         self.gridLayout_13.setObjectName(u"gridLayout_13")
         self.gridLayout_13.setContentsMargins(0, 0, 0, 0)
@@ -289,56 +462,98 @@ class Ui_MainWindow(object):
 
         self.gridLayout_14 = QGridLayout()
         self.gridLayout_14.setObjectName(u"gridLayout_14")
-        self.txtMbResta12 = QLineEdit(self.gridLayoutWidget_6)
-        self.txtMbResta12.setObjectName(u"txtMbResta12")
+        self.label_11 = QLabel(self.gridLayoutWidget_6)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet(u"color: #9C27B0; ")
 
-        self.gridLayout_14.addWidget(self.txtMbResta12, 1, 1, 1, 1)
-
-        self.txtMbResta22 = QLineEdit(self.gridLayoutWidget_6)
-        self.txtMbResta22.setObjectName(u"txtMbResta22")
-
-        self.gridLayout_14.addWidget(self.txtMbResta22, 2, 1, 1, 1)
-
-        self.txtMbResta11 = QLineEdit(self.gridLayoutWidget_6)
-        self.txtMbResta11.setObjectName(u"txtMbResta11")
-
-        self.gridLayout_14.addWidget(self.txtMbResta11, 1, 0, 1, 1)
+        self.gridLayout_14.addWidget(self.label_11, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
         self.txtMbResta23 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMbResta23.setObjectName(u"txtMbResta23")
+        self.txtMbResta23.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_14.addWidget(self.txtMbResta23, 2, 2, 1, 1)
 
+        self.txtMbResta31 = QLineEdit(self.gridLayoutWidget_6)
+        self.txtMbResta31.setObjectName(u"txtMbResta31")
+        self.txtMbResta31.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
+
+        self.gridLayout_14.addWidget(self.txtMbResta31, 3, 0, 1, 1)
+
         self.txtMbResta21 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMbResta21.setObjectName(u"txtMbResta21")
+        self.txtMbResta21.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_14.addWidget(self.txtMbResta21, 2, 0, 1, 1)
 
         self.txtMbResta32 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMbResta32.setObjectName(u"txtMbResta32")
+        self.txtMbResta32.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_14.addWidget(self.txtMbResta32, 3, 1, 1, 1)
 
-        self.txtMbResta31 = QLineEdit(self.gridLayoutWidget_6)
-        self.txtMbResta31.setObjectName(u"txtMbResta31")
-
-        self.gridLayout_14.addWidget(self.txtMbResta31, 3, 0, 1, 1)
-
-        self.txtMbResta33 = QLineEdit(self.gridLayoutWidget_6)
-        self.txtMbResta33.setObjectName(u"txtMbResta33")
-
-        self.gridLayout_14.addWidget(self.txtMbResta33, 3, 2, 1, 1)
-
         self.txtMbResta13 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMbResta13.setObjectName(u"txtMbResta13")
+        self.txtMbResta13.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px; color: black; ")
 
         self.gridLayout_14.addWidget(self.txtMbResta13, 1, 2, 1, 1)
 
-        self.label_11 = QLabel(self.gridLayoutWidget_6)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setFont(font)
+        self.txtMbResta33 = QLineEdit(self.gridLayoutWidget_6)
+        self.txtMbResta33.setObjectName(u"txtMbResta33")
+        self.txtMbResta33.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
-        self.gridLayout_14.addWidget(self.label_11, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+        self.gridLayout_14.addWidget(self.txtMbResta33, 3, 2, 1, 1)
+
+        self.txtMbResta12 = QLineEdit(self.gridLayoutWidget_6)
+        self.txtMbResta12.setObjectName(u"txtMbResta12")
+        self.txtMbResta12.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px; color: black;  ")
+
+        self.gridLayout_14.addWidget(self.txtMbResta12, 1, 1, 1, 1)
+
+        self.txtMbResta22 = QLineEdit(self.gridLayoutWidget_6)
+        self.txtMbResta22.setObjectName(u"txtMbResta22")
+        self.txtMbResta22.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
+
+        self.gridLayout_14.addWidget(self.txtMbResta22, 2, 1, 1, 1)
+
+        self.txtMbResta11 = QLineEdit(self.gridLayoutWidget_6)
+        self.txtMbResta11.setObjectName(u"txtMbResta11")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Ignored)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.txtMbResta11.sizePolicy().hasHeightForWidth())
+        self.txtMbResta11.setSizePolicy(sizePolicy)
+        self.txtMbResta11.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
+
+        self.gridLayout_14.addWidget(self.txtMbResta11, 1, 0, 1, 1)
 
 
         self.gridLayout_13.addLayout(self.gridLayout_14, 0, 3, 1, 1)
@@ -347,11 +562,21 @@ class Ui_MainWindow(object):
         self.gridLayout_15.setObjectName(u"gridLayout_15")
         self.txtMaResta23 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta23.setObjectName(u"txtMaResta23")
+        self.txtMaResta23.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta23, 2, 2, 1, 1)
 
         self.txtMaResta13 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta13.setObjectName(u"txtMaResta13")
+        self.txtMaResta13.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta13, 1, 2, 1, 1)
 
@@ -359,41 +584,77 @@ class Ui_MainWindow(object):
         self.label_12.setObjectName(u"label_12")
         self.label_12.setFont(font)
         self.label_12.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_12.setStyleSheet(u"color: lightblue;")
 
         self.gridLayout_15.addWidget(self.label_12, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
         self.txtMaResta21 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta21.setObjectName(u"txtMaResta21")
+        self.txtMaResta21.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta21, 2, 0, 1, 1)
 
         self.txtMaResta22 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta22.setObjectName(u"txtMaResta22")
+        self.txtMaResta22.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta22, 2, 1, 1, 1)
 
         self.txtMaResta31 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta31.setObjectName(u"txtMaResta31")
+        self.txtMaResta31.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta31, 3, 0, 1, 1)
 
         self.txtMaResta12 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta12.setObjectName(u"txtMaResta12")
+        self.txtMaResta12.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta12, 1, 1, 1, 1)
 
         self.txtMaResta33 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta33.setObjectName(u"txtMaResta33")
+        self.txtMaResta33.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta33, 3, 2, 1, 1)
 
         self.txtMaResta32 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta32.setObjectName(u"txtMaResta32")
+        self.txtMaResta32.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta32, 3, 1, 1, 1)
 
         self.txtMaResta11 = QLineEdit(self.gridLayoutWidget_6)
         self.txtMaResta11.setObjectName(u"txtMaResta11")
+        self.txtMaResta11.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_15.addWidget(self.txtMaResta11, 1, 0, 1, 1)
 
@@ -402,52 +663,97 @@ class Ui_MainWindow(object):
 
         self.gridLayoutWidget_5 = QWidget(self.tab_2)
         self.gridLayoutWidget_5.setObjectName(u"gridLayoutWidget_5")
-        self.gridLayoutWidget_5.setGeometry(QRect(20, 330, 194, 141))
+        self.gridLayoutWidget_5.setGeometry(QRect(20, 330, 194, 147))
         self.gridLayout_10 = QGridLayout(self.gridLayoutWidget_5)
         self.gridLayout_10.setObjectName(u"gridLayout_10")
         self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
         self.txtMresResta11 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta11.setObjectName(u"txtMresResta11")
+        self.txtMresResta11.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresResta11.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta11, 1, 0, 1, 1)
 
         self.txtMresResta31 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta31.setObjectName(u"txtMresResta31")
+        self.txtMresResta31.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresResta31.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta31, 3, 0, 1, 1)
 
         self.txtMresResta23 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta23.setObjectName(u"txtMresResta23")
+        self.txtMresResta23.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresResta23.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta23, 2, 2, 1, 1)
 
         self.txtMresResta12 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta12.setObjectName(u"txtMresResta12")
+        self.txtMresResta12.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresResta12.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta12, 1, 1, 1, 1)
 
         self.txtMresResta22 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta22.setObjectName(u"txtMresResta22")
+        self.txtMresResta22.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresResta22.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta22, 2, 1, 1, 1)
 
         self.txtMresResta21 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta21.setObjectName(u"txtMresResta21")
+        self.txtMresResta21.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresResta21.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta21, 2, 0, 1, 1)
 
         self.txtMresResta32 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta32.setObjectName(u"txtMresResta32")
+        self.txtMresResta32.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresResta32.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta32, 3, 1, 1, 1)
 
         self.txtMresResta13 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta13.setObjectName(u"txtMresResta13")
+        self.txtMresResta13.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresResta13.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta13, 1, 2, 1, 1)
 
         self.txtMresResta33 = QLineEdit(self.gridLayoutWidget_5)
         self.txtMresResta33.setObjectName(u"txtMresResta33")
+        self.txtMresResta33.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresResta33.setReadOnly(True)
 
         self.gridLayout_10.addWidget(self.txtMresResta33, 3, 2, 1, 1)
 
@@ -455,6 +761,7 @@ class Ui_MainWindow(object):
         self.label_8.setObjectName(u"label_8")
         self.label_8.setFont(font)
         self.label_8.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_8.setStyleSheet(u"color: #4CAF50;  /* Texto verde claro */")
 
         self.gridLayout_10.addWidget(self.label_8, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
@@ -464,16 +771,58 @@ class Ui_MainWindow(object):
         self.label_10.setFont(font)
         self.btnCalcularResta = QPushButton(self.tab_2)
         self.btnCalcularResta.setObjectName(u"btnCalcularResta")
-        self.btnCalcularResta.setGeometry(QRect(500, 100, 171, 61))
+        self.btnCalcularResta.setGeometry(QRect(510, 100, 171, 61))
+        self.btnCalcularResta.setStyleSheet(u"QPushButton {\n"
+"    background-color: lightgreen;  \n"
+"    color: white;               \n"
+"    border: 2px solid lightgreen;  \n"
+"    border-radius: 10px;        \n"
+"    font-size: 18px;           \n"
+"    font-weight: bold;       \n"
+"    padding: 10px 20px;      \n"
+"    transition: all 0.3s;       \n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #32CD32; \n"
+"    border-color: #228B22;     \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFD700;  \n"
+"    border-color: #FF8C00;   \n"
+"}\n"
+"")
         self.btnLimpiarResta = QPushButton(self.tab_2)
         self.btnLimpiarResta.setObjectName(u"btnLimpiarResta")
         self.btnLimpiarResta.setGeometry(QRect(520, 210, 131, 51))
+        self.btnLimpiarResta.setStyleSheet(u"QPushButton {\n"
+"    background-color: #FF6347;  \n"
+"    color: white;               \n"
+"    border: 2px solid #FF4500;  \n"
+"    border-radius: 10px;       \n"
+"    font-size: 18px;            \n"
+"    font-weight: bold;          \n"
+"    padding: 10px 20px;         \n"
+"    transition: all 0.3s;       \n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #32CD32;  \n"
+"    border-color: #228B22;     \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFD700; \n"
+"    border-color: #FF8C00;    \n"
+"}\n"
+"")
         self.tabWidget.addTab(self.tab_2, "")
         self.tab_3 = QWidget()
         self.tab_3.setObjectName(u"tab_3")
         self.gridLayoutWidget_7 = QWidget(self.tab_3)
         self.gridLayoutWidget_7.setObjectName(u"gridLayoutWidget_7")
-        self.gridLayoutWidget_7.setGeometry(QRect(20, 50, 401, 136))
+        self.gridLayoutWidget_7.setGeometry(QRect(20, 50, 533, 149))
         self.gridLayout_16 = QGridLayout(self.gridLayoutWidget_7)
         self.gridLayout_16.setObjectName(u"gridLayout_16")
         self.gridLayout_16.setContentsMargins(0, 0, 0, 0)
@@ -487,52 +836,89 @@ class Ui_MainWindow(object):
         self.gridLayout_17.setObjectName(u"gridLayout_17")
         self.txtMbMulti12 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti12.setObjectName(u"txtMbMulti12")
+        self.txtMbMulti12.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_17.addWidget(self.txtMbMulti12, 1, 1, 1, 1)
 
         self.txtMbMulti22 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti22.setObjectName(u"txtMbMulti22")
+        self.txtMbMulti22.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px ; color: black;  ")
 
         self.gridLayout_17.addWidget(self.txtMbMulti22, 2, 1, 1, 1)
 
         self.txtMbMulti11 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti11.setObjectName(u"txtMbMulti11")
+        self.txtMbMulti11.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_17.addWidget(self.txtMbMulti11, 1, 0, 1, 1)
 
         self.txtMbMulti23 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti23.setObjectName(u"txtMbMulti23")
+        self.txtMbMulti23.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;   color: black;")
 
         self.gridLayout_17.addWidget(self.txtMbMulti23, 2, 2, 1, 1)
 
         self.txtMbMulti21 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti21.setObjectName(u"txtMbMulti21")
+        self.txtMbMulti21.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_17.addWidget(self.txtMbMulti21, 2, 0, 1, 1)
 
         self.txtMbMulti32 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti32.setObjectName(u"txtMbMulti32")
+        self.txtMbMulti32.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_17.addWidget(self.txtMbMulti32, 3, 1, 1, 1)
 
         self.txtMbMulti31 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti31.setObjectName(u"txtMbMulti31")
+        self.txtMbMulti31.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_17.addWidget(self.txtMbMulti31, 3, 0, 1, 1)
 
         self.txtMbMulti33 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti33.setObjectName(u"txtMbMulti33")
+        self.txtMbMulti33.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_17.addWidget(self.txtMbMulti33, 3, 2, 1, 1)
 
         self.txtMbMulti13 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMbMulti13.setObjectName(u"txtMbMulti13")
+        self.txtMbMulti13.setStyleSheet(u"background-color: #F3E5F5; \n"
+"border: 1px solid #D1C4E9; \n"
+"padding: 5px;  \n"
+"font-size: 14px;  color: black;")
 
         self.gridLayout_17.addWidget(self.txtMbMulti13, 1, 2, 1, 1)
 
         self.label_15 = QLabel(self.gridLayoutWidget_7)
         self.label_15.setObjectName(u"label_15")
         self.label_15.setFont(font)
+        self.label_15.setStyleSheet(u"color: #9C27B0; ")
 
         self.gridLayout_17.addWidget(self.label_15, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
 
@@ -543,11 +929,21 @@ class Ui_MainWindow(object):
         self.gridLayout_18.setObjectName(u"gridLayout_18")
         self.txtMaMulti23 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti23.setObjectName(u"txtMaMulti23")
+        self.txtMaMulti23.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti23, 2, 2, 1, 1)
 
         self.txtMaMulti13 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti13.setObjectName(u"txtMaMulti13")
+        self.txtMaMulti13.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti13, 1, 2, 1, 1)
 
@@ -555,41 +951,77 @@ class Ui_MainWindow(object):
         self.label_16.setObjectName(u"label_16")
         self.label_16.setFont(font)
         self.label_16.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_16.setStyleSheet(u"color: lightblue;")
 
         self.gridLayout_18.addWidget(self.label_16, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
         self.txtMaMulti21 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti21.setObjectName(u"txtMaMulti21")
+        self.txtMaMulti21.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti21, 2, 0, 1, 1)
 
         self.txtMaMulti22 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti22.setObjectName(u"txtMaMulti22")
+        self.txtMaMulti22.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti22, 2, 1, 1, 1)
 
         self.txtMaMulti31 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti31.setObjectName(u"txtMaMulti31")
+        self.txtMaMulti31.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti31, 3, 0, 1, 1)
 
         self.txtMaMulti12 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti12.setObjectName(u"txtMaMulti12")
+        self.txtMaMulti12.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti12, 1, 1, 1, 1)
 
         self.txtMaMulti33 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti33.setObjectName(u"txtMaMulti33")
+        self.txtMaMulti33.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti33, 3, 2, 1, 1)
 
         self.txtMaMulti32 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti32.setObjectName(u"txtMaMulti32")
+        self.txtMaMulti32.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti32, 3, 1, 1, 1)
 
         self.txtMaMulti11 = QLineEdit(self.gridLayoutWidget_7)
         self.txtMaMulti11.setObjectName(u"txtMaMulti11")
+        self.txtMaMulti11.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_18.addWidget(self.txtMaMulti11, 1, 0, 1, 1)
 
@@ -602,52 +1034,97 @@ class Ui_MainWindow(object):
         self.label_17.setFont(font)
         self.gridLayoutWidget_4 = QWidget(self.tab_3)
         self.gridLayoutWidget_4.setObjectName(u"gridLayoutWidget_4")
-        self.gridLayoutWidget_4.setGeometry(QRect(20, 340, 194, 141))
+        self.gridLayoutWidget_4.setGeometry(QRect(20, 340, 194, 147))
         self.gridLayout_12 = QGridLayout(self.gridLayoutWidget_4)
         self.gridLayout_12.setObjectName(u"gridLayout_12")
         self.gridLayout_12.setContentsMargins(0, 0, 0, 0)
         self.txtMresMulti11 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti11.setObjectName(u"txtMresMulti11")
+        self.txtMresMulti11.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresMulti11.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti11, 1, 0, 1, 1)
 
         self.txtMresMulti31 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti31.setObjectName(u"txtMresMulti31")
+        self.txtMresMulti31.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresMulti31.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti31, 3, 0, 1, 1)
 
         self.txtMresMulti23 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti23.setObjectName(u"txtMresMulti23")
+        self.txtMresMulti23.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresMulti23.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti23, 2, 2, 1, 1)
 
         self.txtMresMulti12 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti12.setObjectName(u"txtMresMulti12")
+        self.txtMresMulti12.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresMulti12.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti12, 1, 1, 1, 1)
 
         self.txtMresMulti22 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti22.setObjectName(u"txtMresMulti22")
+        self.txtMresMulti22.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresMulti22.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti22, 2, 1, 1, 1)
 
         self.txtMresMulti21 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti21.setObjectName(u"txtMresMulti21")
+        self.txtMresMulti21.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMresMulti21.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti21, 2, 0, 1, 1)
 
         self.txtMresMulti32 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti32.setObjectName(u"txtMresMulti32")
+        self.txtMresMulti32.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresMulti32.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti32, 3, 1, 1, 1)
 
         self.txtMresMulti13 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti13.setObjectName(u"txtMresMulti13")
+        self.txtMresMulti13.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresMulti13.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti13, 1, 2, 1, 1)
 
         self.txtMresMulti33 = QLineEdit(self.gridLayoutWidget_4)
         self.txtMresMulti33.setObjectName(u"txtMresMulti33")
+        self.txtMresMulti33.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px;color: black;")
+        self.txtMresMulti33.setReadOnly(True)
 
         self.gridLayout_12.addWidget(self.txtMresMulti33, 3, 2, 1, 1)
 
@@ -655,15 +1132,58 @@ class Ui_MainWindow(object):
         self.label_23.setObjectName(u"label_23")
         self.label_23.setFont(font)
         self.label_23.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_23.setStyleSheet(u"color: #4CAF50;  /* Texto verde claro */")
 
         self.gridLayout_12.addWidget(self.label_23, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
         self.btnCalcularMulti = QPushButton(self.tab_3)
         self.btnCalcularMulti.setObjectName(u"btnCalcularMulti")
-        self.btnCalcularMulti.setGeometry(QRect(450, 90, 171, 61))
+        self.btnCalcularMulti.setGeometry(QRect(490, 220, 171, 61))
+        self.btnCalcularMulti.setStyleSheet(u"QPushButton {\n"
+"    background-color: lightgreen;  \n"
+"    color: white;               \n"
+"    border: 2px solid lightgreen;  \n"
+"    border-radius: 10px;        \n"
+"    font-size: 18px;           \n"
+"    font-weight: bold;       \n"
+"    padding: 10px 20px;      \n"
+"    transition: all 0.3s;       \n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #32CD32; \n"
+"    border-color: #228B22;     \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFD700;  \n"
+"    border-color: #FF8C00;   \n"
+"}\n"
+"")
         self.btnLimpiarMulti = QPushButton(self.tab_3)
         self.btnLimpiarMulti.setObjectName(u"btnLimpiarMulti")
-        self.btnLimpiarMulti.setGeometry(QRect(480, 160, 131, 51))
+        self.btnLimpiarMulti.setGeometry(QRect(520, 290, 131, 51))
+        self.btnLimpiarMulti.setStyleSheet(u"QPushButton {\n"
+"    background-color: #FF6347;  \n"
+"    color: white;               \n"
+"    border: 2px solid #FF4500;  \n"
+"    border-radius: 10px;       \n"
+"    font-size: 18px;            \n"
+"    font-weight: bold;          \n"
+"    padding: 10px 20px;         \n"
+"    transition: all 0.3s;       \n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #32CD32;  \n"
+"    border-color: #228B22;     \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFD700; \n"
+"    border-color: #FF8C00;    \n"
+"}\n"
+"")
         self.tabWidget.addTab(self.tab_3, "")
         self.tab_4 = QWidget()
         self.tab_4.setObjectName(u"tab_4")
@@ -673,52 +1193,97 @@ class Ui_MainWindow(object):
         self.label_18.setFont(font)
         self.gridLayoutWidget_9 = QWidget(self.tab_4)
         self.gridLayoutWidget_9.setObjectName(u"gridLayoutWidget_9")
-        self.gridLayoutWidget_9.setGeometry(QRect(20, 340, 194, 141))
+        self.gridLayoutWidget_9.setGeometry(QRect(20, 340, 194, 147))
         self.gridLayout_22 = QGridLayout(self.gridLayoutWidget_9)
         self.gridLayout_22.setObjectName(u"gridLayout_22")
         self.gridLayout_22.setContentsMargins(0, 0, 0, 0)
         self.txtMadjunInversa11 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa11.setObjectName(u"txtMadjunInversa11")
+        self.txtMadjunInversa11.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa11.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa11, 1, 0, 1, 1)
 
         self.txtMadjunInversa31 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa31.setObjectName(u"txtMadjunInversa31")
+        self.txtMadjunInversa31.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa31.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa31, 3, 0, 1, 1)
 
         self.txtMadjunInversa23 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa23.setObjectName(u"txtMadjunInversa23")
+        self.txtMadjunInversa23.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa23.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa23, 2, 2, 1, 1)
 
         self.txtMadjunInversa12 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa12.setObjectName(u"txtMadjunInversa12")
+        self.txtMadjunInversa12.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa12.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa12, 1, 1, 1, 1)
 
         self.txtMadjunInversa22 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa22.setObjectName(u"txtMadjunInversa22")
+        self.txtMadjunInversa22.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa22.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa22, 2, 1, 1, 1)
 
         self.txtMadjunInversa21 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa21.setObjectName(u"txtMadjunInversa21")
+        self.txtMadjunInversa21.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa21.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa21, 2, 0, 1, 1)
 
         self.txtMadjunInversa32 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa32.setObjectName(u"txtMadjunInversa32")
+        self.txtMadjunInversa32.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa32.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa32, 3, 1, 1, 1)
 
         self.txtMadjunInversa13 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa13.setObjectName(u"txtMadjunInversa13")
+        self.txtMadjunInversa13.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa13.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa13, 1, 2, 1, 1)
 
         self.txtMadjunInversa33 = QLineEdit(self.gridLayoutWidget_9)
         self.txtMadjunInversa33.setObjectName(u"txtMadjunInversa33")
+        self.txtMadjunInversa33.setStyleSheet(u"background-color: #FFEBEE;  \n"
+"border: 1px solid #FFAB91;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtMadjunInversa33.setReadOnly(True)
 
         self.gridLayout_22.addWidget(self.txtMadjunInversa33, 3, 2, 1, 1)
 
@@ -726,57 +1291,103 @@ class Ui_MainWindow(object):
         self.label_24.setObjectName(u"label_24")
         self.label_24.setFont(font)
         self.label_24.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_24.setStyleSheet(u"color: #FF7043; ")
 
         self.gridLayout_22.addWidget(self.label_24, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
         self.gridLayoutWidget_10 = QWidget(self.tab_4)
         self.gridLayoutWidget_10.setObjectName(u"gridLayoutWidget_10")
-        self.gridLayoutWidget_10.setGeometry(QRect(10, 40, 194, 141))
+        self.gridLayoutWidget_10.setGeometry(QRect(10, 40, 194, 147))
         self.gridLayout_23 = QGridLayout(self.gridLayoutWidget_10)
         self.gridLayout_23.setObjectName(u"gridLayout_23")
         self.gridLayout_23.setContentsMargins(0, 0, 0, 0)
         self.txtMaInversa11 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa11.setObjectName(u"txtMaInversa11")
+        self.txtMaInversa11.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa11, 1, 0, 1, 1)
 
         self.txtMaInversa31 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa31.setObjectName(u"txtMaInversa31")
+        self.txtMaInversa31.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa31, 3, 0, 1, 1)
 
         self.txtMaInversa23 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa23.setObjectName(u"txtMaInversa23")
+        self.txtMaInversa23.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa23, 2, 2, 1, 1)
 
         self.txtMaInversa12 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa12.setObjectName(u"txtMaInversa12")
+        self.txtMaInversa12.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa12, 1, 1, 1, 1)
 
         self.txtMaInversa22 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa22.setObjectName(u"txtMaInversa22")
+        self.txtMaInversa22.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa22, 2, 1, 1, 1)
 
         self.txtMaInversa21 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa21.setObjectName(u"txtMaInversa21")
+        self.txtMaInversa21.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa21, 2, 0, 1, 1)
 
         self.txtMaInversa32 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa32.setObjectName(u"txtMaInversa32")
+        self.txtMaInversa32.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa32, 3, 1, 1, 1)
 
         self.txtMaInversa13 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa13.setObjectName(u"txtMaInversa13")
+        self.txtMaInversa13.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa13, 1, 2, 1, 1)
 
         self.txtMaInversa33 = QLineEdit(self.gridLayoutWidget_10)
         self.txtMaInversa33.setObjectName(u"txtMaInversa33")
+        self.txtMaInversa33.setStyleSheet(u"background-color: lightblue;\n"
+"border: 1px solid lightblue; \n"
+"padding: 5px;  \n"
+"font-size: 14px; \n"
+"color: black;")
 
         self.gridLayout_23.addWidget(self.txtMaInversa33, 3, 2, 1, 1)
 
@@ -784,6 +1395,7 @@ class Ui_MainWindow(object):
         self.label_25.setObjectName(u"label_25")
         self.label_25.setFont(font)
         self.label_25.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_25.setStyleSheet(u"color: lightblue;")
 
         self.gridLayout_23.addWidget(self.label_25, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
@@ -797,62 +1409,113 @@ class Ui_MainWindow(object):
         self.label_26.setObjectName(u"label_26")
         self.label_26.setFont(font)
         self.label_26.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_26.setStyleSheet(u"color: #E57373; ")
 
         self.gridLayout_24.addWidget(self.label_26, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
         self.txtDeterInversa = QLineEdit(self.gridLayoutWidget_11)
         self.txtDeterInversa.setObjectName(u"txtDeterInversa")
+        self.txtDeterInversa.setStyleSheet(u"background-color: #FFF3E0;  \n"
+"border: 1px solid #FFCCBC;  \n"
+"padding: 5px;\n"
+"font-size: 14px; color: black;")
+        self.txtDeterInversa.setReadOnly(True)
 
         self.gridLayout_24.addWidget(self.txtDeterInversa, 1, 0, 1, 3)
 
         self.gridLayoutWidget_12 = QWidget(self.tab_4)
         self.gridLayoutWidget_12.setObjectName(u"gridLayoutWidget_12")
-        self.gridLayoutWidget_12.setGeometry(QRect(470, 340, 194, 141))
+        self.gridLayoutWidget_12.setGeometry(QRect(470, 340, 194, 147))
         self.gridLayout_26 = QGridLayout(self.gridLayoutWidget_12)
         self.gridLayout_26.setObjectName(u"gridLayout_26")
         self.gridLayout_26.setContentsMargins(0, 0, 0, 0)
         self.txtMinversaInversa11 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa11.setObjectName(u"txtMinversaInversa11")
+        self.txtMinversaInversa11.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa11.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa11, 1, 0, 1, 1)
 
         self.txtMinversaInversa31 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa31.setObjectName(u"txtMinversaInversa31")
+        self.txtMinversaInversa31.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa31.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa31, 3, 0, 1, 1)
 
         self.txtMinversaInversa23 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa23.setObjectName(u"txtMinversaInversa23")
+        self.txtMinversaInversa23.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa23.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa23, 2, 2, 1, 1)
 
         self.txtMinversaInversa12 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa12.setObjectName(u"txtMinversaInversa12")
+        self.txtMinversaInversa12.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa12.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa12, 1, 1, 1, 1)
 
         self.txtMinversaInversa22 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa22.setObjectName(u"txtMinversaInversa22")
+        self.txtMinversaInversa22.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa22.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa22, 2, 1, 1, 1)
 
         self.txtMinversaInversa21 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa21.setObjectName(u"txtMinversaInversa21")
+        self.txtMinversaInversa21.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa21.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa21, 2, 0, 1, 1)
 
         self.txtMinversaInversa32 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa32.setObjectName(u"txtMinversaInversa32")
+        self.txtMinversaInversa32.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa32.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa32, 3, 1, 1, 1)
 
         self.txtMinversaInversa13 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa13.setObjectName(u"txtMinversaInversa13")
+        self.txtMinversaInversa13.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa13.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa13, 1, 2, 1, 1)
 
         self.txtMinversaInversa33 = QLineEdit(self.gridLayoutWidget_12)
         self.txtMinversaInversa33.setObjectName(u"txtMinversaInversa33")
+        self.txtMinversaInversa33.setStyleSheet(u"background-color: #E8F5E9;  \n"
+"border: 1px solid #A5D6A7; \n"
+"    padding: 5px;\n"
+"    font-size: 14px; color: black;")
+        self.txtMinversaInversa33.setReadOnly(True)
 
         self.gridLayout_26.addWidget(self.txtMinversaInversa33, 3, 2, 1, 1)
 
@@ -860,15 +1523,58 @@ class Ui_MainWindow(object):
         self.label_28.setObjectName(u"label_28")
         self.label_28.setFont(font)
         self.label_28.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.label_28.setStyleSheet(u"color: #4CAF50;  /* Texto verde claro */")
 
         self.gridLayout_26.addWidget(self.label_28, 0, 0, 1, 3, Qt.AlignmentFlag.AlignHCenter)
 
         self.btnCalcularInversa = QPushButton(self.tab_4)
         self.btnCalcularInversa.setObjectName(u"btnCalcularInversa")
         self.btnCalcularInversa.setGeometry(QRect(260, 70, 171, 61))
+        self.btnCalcularInversa.setStyleSheet(u"QPushButton {\n"
+"    background-color: lightgreen;  \n"
+"    color: white;               \n"
+"    border: 2px solid lightgreen;  \n"
+"    border-radius: 10px;        \n"
+"    font-size: 18px;           \n"
+"    font-weight: bold;       \n"
+"    padding: 10px 20px;      \n"
+"    transition: all 0.3s;       \n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #32CD32; \n"
+"    border-color: #228B22;     \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFD700;  \n"
+"    border-color: #FF8C00;   \n"
+"}\n"
+"")
         self.btnLimpiarInversa = QPushButton(self.tab_4)
         self.btnLimpiarInversa.setObjectName(u"btnLimpiarInversa")
         self.btnLimpiarInversa.setGeometry(QRect(520, 70, 131, 51))
+        self.btnLimpiarInversa.setStyleSheet(u"QPushButton {\n"
+"    background-color: #FF6347;  \n"
+"    color: white;               \n"
+"    border: 2px solid #FF4500;  \n"
+"    border-radius: 10px;       \n"
+"    font-size: 18px;            \n"
+"    font-weight: bold;          \n"
+"    padding: 10px 20px;         \n"
+"    transition: all 0.3s;       \n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #32CD32;  \n"
+"    border-color: #228B22;     \n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #FFD700; \n"
+"    border-color: #FF8C00;    \n"
+"}\n"
+"")
         self.tabWidget.addTab(self.tab_4, "")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
@@ -994,7 +1700,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(MainWindow)

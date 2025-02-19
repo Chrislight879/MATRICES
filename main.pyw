@@ -14,8 +14,77 @@ class form(QMainWindow):
         self.ui.tabWidget.setCurrentIndex(0)
 
         self.ui.btnCalcularResta.clicked.connect(self.restar)
+        self.ui.btnLimpiarResta.clicked.connect(self.cleanrestar)
         self.ui.btnCalcularSum.clicked.connect(self.sumar)
+        self.ui.btnLimpiarSum.clicked.connect(self.cleansuma)
         self.ui.btnCalcularInversa.clicked.connect(self.inversa)
+        self.ui.btnLimpiarInversa.clicked.connect(self.cleaninversa)
+        self.ui.btnLimpiarMulti.clicked.connect(self.cleanmultiplicar)
+
+    def cleanmultiplicar(self):
+               #MATRIZ A
+        self.ui.txtMaMulti11.clear()
+        self.ui.txtMaMulti12.clear()
+        self.ui.txtMaMulti13.clear()
+        self.ui.txtMaMulti21.clear()
+        self.ui.txtMaMulti22.clear()
+        self.ui.txtMaMulti23.clear()
+        self.ui.txtMaMulti31.clear()
+        self.ui.txtMaMulti32.clear()
+        self.ui.txtMaMulti33.clear()
+        #MATRIZ B
+        self.ui.txtMbMulti11.clear()
+        self.ui.txtMbMulti12.clear()
+        self.ui.txtMbMulti13.clear()
+        self.ui.txtMbMulti21.clear()
+        self.ui.txtMbMulti22.clear()
+        self.ui.txtMbMulti23.clear()
+        self.ui.txtMbMulti31.clear()
+        self.ui.txtMbMulti32.clear()
+        self.ui.txtMbMulti33.clear()
+        #MATRIZ RESPUESTA
+        self.ui.txtMresMulti11.clear()
+        self.ui.txtMresMulti12.clear()
+        self.ui.txtMresMulti13.clear()
+        self.ui.txtMresMulti21.clear()
+        self.ui.txtMresMulti22.clear()
+        self.ui.txtMresMulti23.clear()
+        self.ui.txtMresMulti31.clear()
+        self.ui.txtMresMulti32.clear()
+        self.ui.txtMresMulti33.clear()
+
+    def cleanrestar(self):
+        #MATRIZ A
+        self.ui.txtMaResta11.clear()
+        self.ui.txtMaResta12.clear()
+        self.ui.txtMaResta13.clear()
+        self.ui.txtMaResta21.clear()
+        self.ui.txtMaResta22.clear()
+        self.ui.txtMaResta23.clear()
+        self.ui.txtMaResta31.clear()
+        self.ui.txtMaResta32.clear()
+        self.ui.txtMaResta33.clear()
+        #MATRIZ B
+        self.ui.txtMbResta11.clear()
+        self.ui.txtMbResta12.clear()
+        self.ui.txtMbResta13.clear()
+        self.ui.txtMbResta21.clear()
+        self.ui.txtMbResta22.clear()
+        self.ui.txtMbResta23.clear()
+        self.ui.txtMbResta31.clear()
+        self.ui.txtMbResta32.clear()
+        self.ui.txtMbResta33.clear()
+        #MATRIZ RESPUESTA
+        self.ui.txtMresResta11.clear()
+        self.ui.txtMresResta12.clear()
+        self.ui.txtMresResta13.clear()
+        self.ui.txtMresResta21.clear()
+        self.ui.txtMresResta22.clear()
+        self.ui.txtMresResta23.clear()
+        self.ui.txtMresResta31.clear()
+        self.ui.txtMresResta32.clear()
+        self.ui.txtMresResta33.clear()
+       
 
     def restar(self):
         # MATRIZ A
@@ -46,6 +115,38 @@ class form(QMainWindow):
         self.ui.txtMresResta31.setText(str(Mres[2][0]))
         self.ui.txtMresResta32.setText(str(Mres[2][1]))
         self.ui.txtMresResta33.setText(str(Mres[2][2]))
+      
+    def cleansuma(self):
+        #MATRIZ A
+        self.ui.txtMaSum11.clear()
+        self.ui.txtMaSum12.clear()
+        self.ui.txtMaSum13.clear()
+        self.ui.txtMaSum21.clear()
+        self.ui.txtMaSum22.clear()
+        self.ui.txtMaSum23.clear()
+        self.ui.txtMaSum31.clear()
+        self.ui.txtMaSum32.clear()
+        self.ui.txtMaSum33.clear()
+        #MATRIZ B
+        self.ui.txtMbSum11.clear()
+        self.ui.txtMbSum12.clear()
+        self.ui.txtMbSum13.clear()
+        self.ui.txtMbSum21.clear()
+        self.ui.txtMbSum22.clear()
+        self.ui.txtMbSum23.clear()
+        self.ui.txtMbSum31.clear()
+        self.ui.txtMbSum32.clear()
+        self.ui.txtMbSum33.clear()
+        #MATRIZ RESPUESTA
+        self.ui.txtMresSum11.clear()
+        self.ui.txtMresSum12.clear()
+        self.ui.txtMresSum13.clear()
+        self.ui.txtMresSum21.clear()
+        self.ui.txtMresSum22.clear()
+        self.ui.txtMresSum23.clear()
+        self.ui.txtMresSum31.clear()
+        self.ui.txtMresSum32.clear()
+        self.ui.txtMresSum33.clear()
 
     def sumar(self):
 
@@ -75,6 +176,40 @@ class form(QMainWindow):
       self.ui.txtMresSum31.setText(str(MresSum[2][0]))
       self.ui.txtMresSum32.setText(str(MresSum[2][1]))
       self.ui.txtMresSum33.setText(str(MresSum[2][2]))
+
+    def cleaninversa(self):
+        #MATRIZ A
+        self.ui.txtMaInversa11.clear()
+        self.ui.txtMaInversa12.clear()
+        self.ui.txtMaInversa13.clear()
+        self.ui.txtMaInversa21.clear()
+        self.ui.txtMaInversa22.clear()
+        self.ui.txtMaInversa23.clear()
+        self.ui.txtMaInversa31.clear()
+        self.ui.txtMaInversa32.clear()
+        self.ui.txtMaInversa33.clear()
+        #MATRIZ ADJUNTA
+        self.ui.txtMadjunInversa11.clear()
+        self.ui.txtMadjunInversa12.clear()
+        self.ui.txtMadjunInversa13.clear()
+        self.ui.txtMadjunInversa21.clear()
+        self.ui.txtMadjunInversa22.clear()
+        self.ui.txtMadjunInversa23.clear()
+        self.ui.txtMadjunInversa31.clear()
+        self.ui.txtMadjunInversa32.clear()
+        self.ui.txtMadjunInversa11.clear()
+        #MATRIZ INVESA RESPUESTA
+        self.ui.txtMinversaInversa11.clear()
+        self.ui.txtMinversaInversa12.clear()
+        self.ui.txtMinversaInversa13.clear()
+        self.ui.txtMinversaInversa21.clear()
+        self.ui.txtMinversaInversa22.clear()
+        self.ui.txtMinversaInversa23.clear()
+        self.ui.txtMinversaInversa31.clear()
+        self.ui.txtMinversaInversa32.clear()
+        self.ui.txtMinversaInversa33.clear()
+        #VALOR DEL DETERMINANTE
+        self.ui.txtDeterInversa.clear()
 
     def inversa(self):
     # MATRIZ ORIGINAL
