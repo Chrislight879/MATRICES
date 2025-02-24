@@ -2,6 +2,7 @@ from PySide6.QtCore import *
 from PySide6.QtWidgets import *
 import sys
 import logo_rc
+from fractions import Fraction
 from form import * #ARCHIVO DEL FORMULARIO CREADO
 
 class form(QMainWindow):
@@ -256,106 +257,86 @@ class form(QMainWindow):
         self.ui.txtMresMulti33.setText(str(Mres[2][2]))
      except ValueError:
          QMessageBox.warning(self, "Error", "Por favor, ingrese solo números válidos en todos los campos.")
- 
-  
+
+    
 
     def inversa(self):
-    # MATRIZ ORIGINAL
      try:
-       A = [
-         [float(self.ui.txtMaInversa11.text()), float(self.ui.txtMaInversa12.text()), float(self.ui.txtMaInversa13.text())],
-         [float(self.ui.txtMaInversa21.text()), float(self.ui.txtMaInversa22.text()), float(self.ui.txtMaInversa23.text())],
-         [float(self.ui.txtMaInversa31.text()), float(self.ui.txtMaInversa32.text()), float(self.ui.txtMaInversa33.text())],
+        # MATRIZ ORIGINAL con números en fracción
+        A = [
+            [Fraction(self.ui.txtMaInversa11.text()), Fraction(self.ui.txtMaInversa12.text()), Fraction(self.ui.txtMaInversa13.text())],
+            [Fraction(self.ui.txtMaInversa21.text()), Fraction(self.ui.txtMaInversa22.text()), Fraction(self.ui.txtMaInversa23.text())],
+            [Fraction(self.ui.txtMaInversa31.text()), Fraction(self.ui.txtMaInversa32.text()), Fraction(self.ui.txtMaInversa33.text())],
         ] 
 
-       # DETERMINANTE (Regla de Sarrus)
-       det = (
+        # DETERMINANTE (Regla de Sarrus)
+        det = (
             A[0][0] * (A[1][1] * A[2][2] - A[1][2] * A[2][1])
           - A[0][1] * (A[1][0] * A[2][2] - A[1][2] * A[2][0])
           + A[0][2] * (A[1][0] * A[2][1] - A[1][1] * A[2][0])
         )
 
-       # MOSTRAR DETERMINANTE
-       self.ui.txtDeterInversa.setText(str(det))
+        # MOSTRAR DETERMINANTE COMO FLOAT
+        self.ui.txtDeterInversa.setText(str(float(det)))  
 
-       if det == 0:
+        if det == 0:
+            QMessageBox.warning(self, "Error", "No hay inversa, el determinante es 0.")
+            return
 
-         QMessageBox.warning(self, "Error", "No hay inversa, el determinante es 0.")
-
-         # Limpiar los campos de entrada
-         self.ui.txtMaInversa11.clear()
-         self.ui.txtMaInversa12.clear()
-         self.ui.txtMaInversa13.clear()
-         self.ui.txtMaInversa21.clear()
-         self.ui.txtMaInversa22.clear()
-         self.ui.txtMaInversa23.clear()
-         self.ui.txtMaInversa31.clear()
-         self.ui.txtMaInversa32.clear()
-         self.ui.txtMaInversa33.clear()
-
-         # Limpiar los campos de la inversa
-         self.ui.txtMinversaInversa11.clear()
-         self.ui.txtMinversaInversa12.clear()
-         self.ui.txtMinversaInversa13.clear()
-         self.ui.txtMinversaInversa21.clear()
-         self.ui.txtMinversaInversa22.clear()
-         self.ui.txtMinversaInversa23.clear()
-         self.ui.txtMinversaInversa31.clear()
-         self.ui.txtMinversaInversa32.clear()
-         self.ui.txtMinversaInversa33.clear()
-
-         return
-
-         # MATRIZ DE COFACTORES
-       Cof = [
-           [
-             ((A[1][1] * A[2][2] - A[1][2] * A[2][1]) * ((-1) ** (0 + 0))),
-             ((A[1][0] * A[2][2] - A[1][2] * A[2][0]) * ((-1) ** (0 + 1))),
-             ((A[1][0] * A[2][1] - A[1][1] * A[2][0]) * ((-1) ** (0 + 2))),
-           ],
-           [
-             ((A[0][1] * A[2][2] - A[0][2] * A[2][1]) * ((-1) ** (1 + 0))),
-             ((A[0][0] * A[2][2] - A[0][2] * A[2][0]) * ((-1) ** (1 + 1))),
-             ((A[0][0] * A[2][1] - A[0][1] * A[2][0]) * ((-1) ** (1 + 2))),
-           ],
-           [
-             ((A[0][1] * A[1][2] - A[0][2] * A[1][1]) * ((-1) ** (2 + 0))),
-             ((A[0][0] * A[1][2] - A[0][2] * A[1][0]) * ((-1) ** (2 + 1))),
-             ((A[0][0] * A[1][1] - A[0][1] * A[1][0]) * ((-1) ** (2 + 2))),
-           ],
+        # MATRIZ DE COFACTORES
+        Cof = [
+            [
+                (A[1][1] * A[2][2] - A[1][2] * A[2][1]) * (-1) ** (0 + 0),
+                (A[1][0] * A[2][2] - A[1][2] * A[2][0]) * (-1) ** (0 + 1),
+                (A[1][0] * A[2][1] - A[1][1] * A[2][0]) * (-1) ** (0 + 2),
+            ],
+            [
+                (A[0][1] * A[2][2] - A[0][2] * A[2][1]) * (-1) ** (1 + 0),
+                (A[0][0] * A[2][2] - A[0][2] * A[2][0]) * (-1) ** (1 + 1),
+                (A[0][0] * A[2][1] - A[0][1] * A[2][0]) * (-1) ** (1 + 2),
+            ],
+            [
+                (A[0][1] * A[1][2] - A[0][2] * A[1][1]) * (-1) ** (2 + 0),
+                (A[0][0] * A[1][2] - A[0][2] * A[1][0]) * (-1) ** (2 + 1),
+                (A[0][0] * A[1][1] - A[0][1] * A[1][0]) * (-1) ** (2 + 2),
+            ],
         ]
 
-         # MATRIZ ADJUNTA (Transpuesta de la matriz de cofactores)
-       Adj = [[Cof[j][i] for j in range(3)] for i in range(3)]
+        # MATRIZ ADJUNTA (Transpuesta de la matriz de cofactores) convertida a float
+        Adj = [[float(Cof[j][i]) for j in range(3)] for i in range(3)]
 
-         # MOSTRAR ADJUNTA
-       self.ui.txtMadjunInversa11.setText(str(Adj[0][0]))
-       self.ui.txtMadjunInversa12.setText(str(Adj[0][1]))
-       self.ui.txtMadjunInversa13.setText(str(Adj[0][2]))
-       self.ui.txtMadjunInversa21.setText(str(Adj[1][0]))
-       self.ui.txtMadjunInversa22.setText(str(Adj[1][1]))
-       self.ui.txtMadjunInversa23.setText(str(Adj[1][2]))
-       self.ui.txtMadjunInversa31.setText(str(Adj[2][0]))
-       self.ui.txtMadjunInversa32.setText(str(Adj[2][1]))
-       self.ui.txtMadjunInversa33.setText(str(Adj[2][2]))
+        # MOSTRAR ADJUNTA COMO FLOAT
+        self.ui.txtMadjunInversa11.setText(str(Adj[0][0]))
+        self.ui.txtMadjunInversa12.setText(str(Adj[0][1]))
+        self.ui.txtMadjunInversa13.setText(str(Adj[0][2]))
+        self.ui.txtMadjunInversa21.setText(str(Adj[1][0]))
+        self.ui.txtMadjunInversa22.setText(str(Adj[1][1]))
+        self.ui.txtMadjunInversa23.setText(str(Adj[1][2]))
+        self.ui.txtMadjunInversa31.setText(str(Adj[2][0]))
+        self.ui.txtMadjunInversa32.setText(str(Adj[2][1]))
+        self.ui.txtMadjunInversa33.setText(str(Adj[2][2]))
 
-         # MATRIZ INVERSA (Adjunta / Determinante)
-       det = float(det)  # Asegura que det sea flotante
-       Inv = [[float(Adj[i][j]) / float(det) for j in range(3)] for i in range(3)]
+        # ✅ Convertir determinante a fracción antes de usarlo en la inversa
+        det_frac = Fraction(det)
 
-         # MOSTRAR INVERSA
-       self.ui.txtMinversaInversa11.setText(str(Inv[0][0]))
-       self.ui.txtMinversaInversa12.setText(str(Inv[0][1]))
-       self.ui.txtMinversaInversa13.setText(str(Inv[0][2]))
-       self.ui.txtMinversaInversa21.setText(str(Inv[1][0]))
-       self.ui.txtMinversaInversa22.setText(str(Inv[1][1]))
-       self.ui.txtMinversaInversa23.setText(str(Inv[1][2]))
-       self.ui.txtMinversaInversa31.setText(str(Inv[2][0]))
-       self.ui.txtMinversaInversa32.setText(str(Inv[2][1]))
-       self.ui.txtMinversaInversa33.setText(str(Inv[2][2]))
+        # MATRIZ INVERSA (Adjunta / Determinante) en fracciones
+        Inv = [[Fraction(Adj[i][j]) / det_frac for j in range(3)] for i in range(3)]
+
+        # MOSTRAR INVERSA COMO FRACCIÓN
+        self.ui.txtMinversaInversa11.setText(str(Inv[0][0]))
+        self.ui.txtMinversaInversa12.setText(str(Inv[0][1]))
+        self.ui.txtMinversaInversa13.setText(str(Inv[0][2]))
+        self.ui.txtMinversaInversa21.setText(str(Inv[1][0]))
+        self.ui.txtMinversaInversa22.setText(str(Inv[1][1]))
+        self.ui.txtMinversaInversa23.setText(str(Inv[1][2]))
+        self.ui.txtMinversaInversa31.setText(str(Inv[2][0]))
+        self.ui.txtMinversaInversa32.setText(str(Inv[2][1]))
+        self.ui.txtMinversaInversa33.setText(str(Inv[2][2]))
+
      except ValueError:
-         QMessageBox.warning(self, "Error", "Por favor, ingrese solo números válidos en todos los campos.")
-  
+        QMessageBox.warning(self, "Error", "Por favor, ingrese solo números válidos en todos los campos.")
+     
+
 
         # CREAR LA APLICACION Y MOSTRARLA
 if __name__ =="__main__":  
