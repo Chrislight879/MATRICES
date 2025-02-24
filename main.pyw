@@ -316,7 +316,7 @@ class form(QMainWindow):
         self.ui.txtMadjunInversa32.setText(str(Adj[2][1]))
         self.ui.txtMadjunInversa33.setText(str(Adj[2][2]))
 
-        # ✅ Convertir determinante a fracción antes de usarlo en la inversa
+        #Convertir determinante a fracción antes de usarlo en la inversa
         det_frac = Fraction(det)
 
         # MATRIZ INVERSA (Adjunta / Determinante) en fracciones
