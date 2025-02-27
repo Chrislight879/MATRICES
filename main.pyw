@@ -283,7 +283,7 @@ class form(QMainWindow):
             QMessageBox.warning(self, "Error", "No hay inversa, el determinante es 0.")
             return
 
-        # MATRIZ DE COFACTORES
+         # MATRIZ DE COFACTORES
         Cof = [
             [
                 (A[1][1] * A[2][2] - A[1][2] * A[2][1]) * (-1) ** (0 + 0),
